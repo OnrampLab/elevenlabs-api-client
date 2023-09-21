@@ -1,10 +1,8 @@
-# php-api-client-template
+# elevenlabs-api-client
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![CircleCI](https://circleci.com/gh/OnrampLab/composer-package-template.svg?style=shield)](https://circleci.com/gh/OnrampLab/composer-package-template)
-[![Total Downloads](https://img.shields.io/packagist/dt/onramplab/composer-package-template.svg?style=flat-square)](https://packagist.org/packages/onramplab/composer-package-template)
-
-If you are trying to create a new PHP API client package, whether it is going to be submitted to packagist.org or just to exist in your Github account, this template package of files will surely help you make the process a lot easier and faster.
+[![CircleCI](https://circleci.com/gh/OnrampLab/elevenlabs-api-client.svg?style=shield)](https://circleci.com/gh/OnrampLab/elevenlabs-api-client)
+[![Total Downloads](https://img.shields.io/packagist/dt/onramplab/elevenlabs-api-client.svg?style=flat-square)](https://packagist.org/packages/onramplab/elevenlabs-api-client)
 
 ## Requirements
 
@@ -23,7 +21,7 @@ If you are trying to create a new PHP API client package, whether it is going to
 ## Installation
 
 ```bash
-composer create-project onramplab/php-api-client-template your-project
+composer require onramplab/elevenlabs-api-client
 ```
 
 This will create a basic project structure for you:
@@ -64,7 +62,7 @@ Please refer to original [article](http://www.darwinbiler.com/creating-composer-
 
     composer psr2autofix
     composer insights:fix
-    rector:fix
+    composer rector:fix
 
 ## Building Docs:
 
