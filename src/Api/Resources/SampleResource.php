@@ -1,8 +1,8 @@
 <?php
 
-namespace OnrampLab\PhpApiClientTemplate\Api\Resources;
+namespace OnrampLab\ElevenlabsApiClient\Api\Resources;
 
-use OnrampLab\PhpApiClientTemplate\Api\Client;
+use OnrampLab\ElevenlabsApiClient\Api\Client;
 
 /**
  * A sample resource
@@ -11,7 +11,7 @@ use OnrampLab\PhpApiClientTemplate\Api\Client;
  * to automatically generate the API documentation
  *
  * @author Onramplab
- * @package Onramplab\PhpApiClientTemplate
+ * @package Onramplab\ElevenlabsApiClient
  */
 class SampleResource
 {

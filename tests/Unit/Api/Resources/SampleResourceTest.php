@@ -1,14 +1,14 @@
 <?php
 
-namespace OnrampLab\PhpApiClientTemplate\Tests\Api\Resources;
+namespace OnrampLab\ElevenlabsApiClient\Tests\Api\Resources;
 
 use Mockery;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Psr7\Response;
-use OnrampLab\PhpApiClientTemplate\Api\Client;
-use OnrampLab\PhpApiClientTemplate\Api\Resources\SampleResource;
+use OnrampLab\ElevenlabsApiClient\Api\Client;
+use OnrampLab\ElevenlabsApiClient\Api\Resources\SampleResource;
 
 class SampleResourceTest extends TestCase
 {

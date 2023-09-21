@@ -1,9 +1,9 @@
 <?php
 
-namespace OnrampLab\PhpApiClientTemplate\Api;
+namespace OnrampLab\ElevenlabsApiClient\Api;
 
 use OnrampLab\ApiClient\Api\Client as ApiClient;
-use OnrampLab\PhpApiClientTemplate\Api\Resources\SampleResource;
+use OnrampLab\ElevenlabsApiClient\Api\Resources\SampleResource;
 
 class Client extends ApiClient
 {
