@@ -5,12 +5,14 @@ namespace OnrampLab\ElevenlabsApiClient\Api;
 use OnrampLab\ApiClient\Api\Client as ApiClient;
 use OnrampLab\ElevenlabsApiClient\Api\Resources\TextToSpeech;
 use OnrampLab\ElevenlabsApiClient\Api\Resources\User;
+use OnrampLab\ElevenlabsApiClient\Api\Resources\Voices;
 use Psr\Http\Message\ResponseInterface;
 
 class Client extends ApiClient
 {
     protected User $user;
     protected TextToSpeech $textToSpeech;
+    protected Voices $voices;
 
     public function __construct($config)
     {
@@ -20,6 +22,7 @@ class Client extends ApiClient
 
         $this->user = new User($this);
         $this->textToSpeech = new TextToSpeech($this);
+        $this->voices = new Voices($this);
     }
 
     public function applyAuth(array $payload): array
