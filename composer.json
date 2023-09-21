@@ -1,17 +1,13 @@
 {
-    "name": "onramplab/php-api-client-template",
-    "description": "A PHP API client template",
+    "name": "onramplab/elevenlabs-api-client",
+    "description": "ElevenLabs API client",
     "type": "library",
     "license": "MIT",
     "keywords": [
-        "template",
         "composer",
+        "elevenlabs",
         "package",
-        "skeleton",
-        "boilerplate",
-        "composer template",
-        "package template",
-        "composer package template"
+        "text-to-speech"
     ],
     "authors": [
         {
