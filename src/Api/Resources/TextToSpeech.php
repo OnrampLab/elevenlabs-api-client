@@ -1,8 +1,8 @@
 <?php
 
-namespace OnrampLab\ElevenlabsApiClient\Api\Resources;
+namespace OnrampLab\ElevenLabsApiClient\Api\Resources;
 
-use OnrampLab\ElevenlabsApiClient\Api\Client;
+use OnrampLab\ElevenLabsApiClient\Api\Client;
 
 class TextToSpeech
 {

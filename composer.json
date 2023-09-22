@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "OnrampLab\\ElevenlabsApiClient\\": "src/"
+            "OnrampLab\\ElevenLabsApiClient\\": "src/"
         }
     },
     "extra": {
@@ -46,7 +46,8 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "symfony/flex": true
+            "symfony/flex": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
     "scripts": {

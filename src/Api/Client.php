@@ -1,11 +1,11 @@
 <?php
 
-namespace OnrampLab\ElevenlabsApiClient\Api;
+namespace OnrampLab\ElevenLabsApiClient\Api;
 
 use OnrampLab\ApiClient\Api\Client as ApiClient;
-use OnrampLab\ElevenlabsApiClient\Api\Resources\TextToSpeech;
-use OnrampLab\ElevenlabsApiClient\Api\Resources\User;
-use OnrampLab\ElevenlabsApiClient\Api\Resources\Voices;
+use OnrampLab\ElevenLabsApiClient\Api\Resources\TextToSpeech;
+use OnrampLab\ElevenLabsApiClient\Api\Resources\User;
+use OnrampLab\ElevenLabsApiClient\Api\Resources\Voices;
 use Psr\Http\Message\ResponseInterface;
 
 class Client extends ApiClient
