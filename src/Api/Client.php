@@ -10,9 +10,9 @@ use Psr\Http\Message\ResponseInterface;
 
 class Client extends ApiClient
 {
-    protected User $user;
-    protected TextToSpeech $textToSpeech;
-    protected Voices $voices;
+    public User $user;
+    public TextToSpeech $textToSpeech;
+    public Voices $voices;
 
     public function __construct($config)
     {
@@ -36,13 +36,19 @@ class Client extends ApiClient
     {
         $accept = strpos($url, 'https://api.elevenlabs.io/v1/text-to-speech') === 0 ? 'audio/mpeg' : 'application/json';
 
-        $payload = $this->applyMiddlewares([
+        $httpConfig = [
             'query' => $params,
             'json' => (object) $data,
             'headers' => [
                 'Accept' => $accept,
             ],
-        ]);
+        ];
+
+        if (strtoupper($method) === 'GET') {
+            unset($httpConfig['json']);
+        }
+
+        $payload = $this->applyMiddlewares($httpConfig);
 
         return $this->httpClient->request($method, $url, $payload);
     }
